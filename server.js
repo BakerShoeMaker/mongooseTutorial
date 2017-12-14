@@ -101,7 +101,7 @@ app.put('/books/:id', function(req, res){
 
 app.delete('/books/:id', function(req, res){
     Book.findOneAndRemove(
-        {id: req.params.id},
+        {_id: req.params.id},
         function(err, book){
             if(err){
 
